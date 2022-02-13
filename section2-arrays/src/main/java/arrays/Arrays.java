@@ -14,8 +14,15 @@ public class Arrays {
         intArray[5] = 1;
         intArray[6] = -22;
 
-        for (int i : intArray) {
-            System.out.println(i);
+        int i = 0;
+        for (int num : intArray) {
+
+            if(num == 7) {
+                System.out.println("index: " + i);
+                break;
+            }
+
+            i++;
         }
     }
 }
