@@ -10,6 +10,7 @@ public class Merge {
         }
     }
 
+//    { 20, 35, -15, 7, 55, 1, -22}
     public static void mergeSort(int[] input, int start, int end) {
 
         if (end - start < 2) {
@@ -18,7 +19,6 @@ public class Merge {
 
         int mid = (start + end) / 2;
 
-//      left array
         mergeSort(input, start, mid);
         mergeSort(input, mid, end);
 
@@ -29,6 +29,19 @@ public class Merge {
         if (input[mid-1] <= input[mid]) {
             return;
         }
+
+        int i = start;
+        int j = mid;
+        int tempIndex = 0;
+
+        int[] tempArray =  new int[end - start];
+
+        while (i < mid && j < end) {
+            tempArray[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++]; ;
+        }
+
+        System.arraycopy(input, i, input, start + tempIndex, mid - i);
+        System.arraycopy(temp, 0, input, start);
     }
 
 }
