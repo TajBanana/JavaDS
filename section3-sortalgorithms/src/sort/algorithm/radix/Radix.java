@@ -34,9 +34,7 @@ public class Radix {
                     = input[tempIndex];
         }
 
-        for (int tempIndex = 0; tempIndex < numItems; tempIndex++) {
-            input[tempIndex] = temp[tempIndex];
-        }
+        System.arraycopy(temp, 0, input, 0, numItems);
     }
 
     public static int getDigit(int position, int value, int radix) {

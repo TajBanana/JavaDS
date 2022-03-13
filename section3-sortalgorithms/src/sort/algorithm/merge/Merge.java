@@ -38,7 +38,7 @@ public class Merge {
         int[] tempArray =  new int[end - start];
 
         while (i < mid && j < end) {
-            tempArray[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++]; ;
+            tempArray[tempIndex++] = input[i] <= input[j] ? input[i++] : input[j++];
         }
 
         System.arraycopy(input, i, input, start + tempIndex, mid - i);
