@@ -1,4 +1,4 @@
-package arraylist;
+package arrayList;
 
 public class Employee {
     private String firstName;

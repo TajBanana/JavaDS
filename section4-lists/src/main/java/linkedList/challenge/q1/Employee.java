@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedList.challenge.q1;
 
 public class Employee {
 
