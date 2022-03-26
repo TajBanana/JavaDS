@@ -44,6 +44,7 @@ public class IntegerLinkedList {
         previous.setNext(newNode);
 
         size ++;
+
 /*        MY ANSWER
         IntegerNode newNode = new IntegerNode(value);
 
