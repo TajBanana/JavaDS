@@ -1,7 +1,7 @@
 import model.Employee;
 import model.SimpleHashtable;
 
-public class Main {
+public class LinearProbe {
     public static void main(String[] args) {
         Employee janeJones = new Employee("Jane", "Jones", 123);
         Employee johnDoe = new Employee("John", "Doe", 4567);
@@ -22,5 +22,10 @@ public class Main {
         System.out.println("Retrieve key Wilson: " + ht.get("Wilson"));
         System.out.println("Retrieve key Wilson: " + ht.get("Smith"));
 
+
+        System.out.println("remove: " + ht.remove("Wilson"));
+        System.out.println("remove: " + ht.remove("Jones"));
+
+        ht.printHashtable();
     }
 }

@@ -18,10 +18,9 @@ public class SimpleHashtable {
             int stopIndex = hashedKey;
 
             //creating first value for first prob for empty slot
-            if (hashedKey == hashtable.length-1) {
+            if (hashedKey == hashtable.length - 1) {
                 hashedKey = 0;
-            }
-            else {
+            } else {
                 hashedKey++;
             }
 
@@ -33,8 +32,7 @@ public class SimpleHashtable {
 
         if (occupied(hashedKey)) {
             System.out.println("Sorry, there's already an employee at position " + hashedKey);
-        }
-        else {
+        } else {
             hashtable[hashedKey] = new StoredEmployee(key, employee);
         }
     }
@@ -45,6 +43,25 @@ public class SimpleHashtable {
             return null;
         }
         return hashtable[hashedKey].employee;
+    }
+
+    public Employee remove(String key) {
+        int hashedKey = findKey(key);
+        if (hashedKey == -1) {
+            return null;
+        }
+
+        Employee employee = hashtable[hashedKey].employee;
+        hashtable[hashedKey] = null;
+        //rehashing when you remove things from the hashtable
+        StoredEmployee[] oldHashtable = hashtable;
+        hashtable = new StoredEmployee[hashtable.length];
+        for (int i = 0; i < hashtable.length; i++) {
+            if (oldHashtable[i] != null) {
+                put(oldHashtable[i].key, oldHashtable[i].employee);
+            }
+        }
+        return employee;
     }
 
     private int hashKey(String key) {
@@ -60,8 +77,7 @@ public class SimpleHashtable {
         int stopIndex = hashedKey;
         if (hashedKey == hashtable.length - 1) {
             hashedKey = 0;
-        }
-        else {
+        } else {
             hashedKey++;
         }
 
@@ -71,11 +87,10 @@ public class SimpleHashtable {
             hashedKey = (hashedKey + 1) % hashtable.length;
         }
 
-        if (stopIndex == hashedKey) {
-            return -1;
-        }
-        else {
+        if (hashtable[hashedKey] != null && hashtable[hashedKey].key.equals(key)) {
             return hashedKey;
+        } else {
+            return -1;
         }
     }
 
@@ -84,16 +99,14 @@ public class SimpleHashtable {
     }
 
     public void printHashtable() {
-        int i = 1;
+        int i = 0;
         for (StoredEmployee storedEmployee : hashtable) {
             if (storedEmployee == null) {
                 System.out.println("Position " + i + ": empty");
-            }
-            else {
-                System.out.println("Position " + i + ": " +storedEmployee.employee);
+            } else {
+                System.out.println("Position " + i + ": " + storedEmployee.employee);
             }
             i++;
         }
     }
-
 }
