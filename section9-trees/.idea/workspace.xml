@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6021604-1ed4-4dd2-8674-0e9de0eef5b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../section10-heaps/section10-heaps/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section10-heaps/section10-heaps/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section10-heaps/section10-heaps/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section10-heaps/section10-heaps/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section10-heaps/section10-heaps/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../section10-heaps/section10-heaps/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_4_22,_9_58_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_4_22__9_58_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +27,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/tajbanana/Documents/JavaDS/section10-heaps/section10-heaps",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -73,6 +69,7 @@
       <workItem from="1650563846483" duration="176000" />
       <workItem from="1650589319319" duration="10983000" />
       <workItem from="1650854201236" duration="2275000" />
+      <workItem from="1651248325149" duration="63000" />
     </task>
     <servers />
   </component>
